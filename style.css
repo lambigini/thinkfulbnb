@@ -62,7 +62,7 @@ header nav ul {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   text-align: center;
 }
 
@@ -106,7 +106,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 280px;
+  width: 150px;
 }
 
 form button {
@@ -131,3 +131,59 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    padding-top: 15px;
+    font-size: 20px;
+  }
+
+  section form {
+    display: flex;
+  }
+
+  .form-label {
+    flex-direction: column;
+    margin-right: 20px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  #about div {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    width: 25%;
+  }
+  #about div:nth-child(2) {
+    flex-direction: row;
+  }
+  #about div:nth-child(2) p {
+    /* flex-grow: 3; */
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid div {
+    margin: 15px;
+  }
+
+  #host {
+    flex-direction: row;
+  }
+
+  #host div {
+    align-items: center;
+  }
+}
