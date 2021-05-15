@@ -132,7 +132,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -167,7 +167,7 @@ footer p {
   #about div:nth-child(2) p {
     /* flex-grow: 3; */
     align-items: center;
-    padding-top: 20px;
+    padding: 30px 0;
   }
 
   .grid {
@@ -183,7 +183,8 @@ footer p {
     flex-direction: row;
   }
 
-  #host div {
+  #host div:nth-child(1) {
     align-items: center;
+    padding: 40px 0px;
   }
 }
